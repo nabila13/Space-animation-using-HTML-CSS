@@ -1,0 +1,49 @@
+body {
+    width: auto;
+    height: 100vh;
+}
+
+.container {
+    background-image: url("./images/back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95%;
+}
+
+@keyframes bigbro {
+    0% {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+@keyframes minibro {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#mini-man {
+    position: absolute;
+    left: 50%;
+    width: 8em;
+    height: 10em;
+    top: 10%;
+    animation: minibro 5s ease-in-out .3s infinite alternate-reverse;
+}
+
+#big-man {
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    margin: auto auto;
+    left: 30%;
+    top: 30%;
+    animation: bigbro 7s ease-in-out .2s infinite alternate;
+}
